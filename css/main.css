@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  color: #222;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+  height: 50px; /* .push must be the same height as .footer */
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:visited, a:active {
+  color: #222;
+}
+
+a:hover {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  line-height: 24px;
+}
+
+small {
+  display: block;
+}
+
+h1 a {
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/* Site stuffs */
+
+.float-l {
+  float: left;
+}
+
+.center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.nav-wrapper {
+  width: 180px;
+  position: absolute;
+}
+
+.nav-wrapper li.selected{
+  background-color: #f7f7f7;
+}
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 180px;
+}
+
+.bio-pic-wrapper, .bio-pic {
+  width: 350px;
+}
+
+/* Utility classes */
+
+.gutter-pad {
+  padding: 15px;
+}
+
+.gutter-pad-bottom {
+  padding-bottom: 15px;
+}
+
+.gutter-pad-left {
+  padding-left: 15px;
+}
+
+.gutter-pad-right {
+  padding-right: 15px;
+}
+
+.border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+

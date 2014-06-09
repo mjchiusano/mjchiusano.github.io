@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mark Chiusano - {{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+      <div class="wrapper">
+        <header>
+          <h1 class="gutter-pad"><a href="/">Mark Chiusano</a></h1>
+        </header>
+
+        <div class="nav-wrapper gutter-pad border-box">
+          <ul class="nav">
+            <li {% if page.url == "/index.html" %}class="selected"{% endif %}><a href="/">Home</a></li>
+            <li {% if page.url == "/bio.html" %}class="selected"{% endif %}><a href="bio.html">Bio</a></li>
+            <li {% if page.url == "/work.html" %}class="selected"{% endif %}><a href="work.html">Articles and Fiction</a></li>
+            <li {% if page.url == "/press.html" %}class="selected"{% endif %}><a href="press.html">Press</a></li>
+            <!-- {% for node in site.pages %}
+              {% if page.url == node.url %}
+                <li class="selected"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+              {% else %}
+                <li><a href="{{node.url}}">{{node.title}}</a></li>
+              {% endif %}
+            {% endfor %} -->
+          </ul>
+        </div>
+
+        <div class="content gutter-pad">
+          {{ content }}
+        </div>
+
+        <div class="push"></div>
+      </div>
+
+      <footer class="gutter-pad border-box">
+        <small>Website by <a href="http://www.jennazeigen.com">Jenna Zeigen</a></small>
+      </footer>
+    </body>
+</html>
