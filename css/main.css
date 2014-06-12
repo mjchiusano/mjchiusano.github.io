@@ -116,3 +116,8 @@ h1 a {
   -moz-box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1140px) {
+
+
+}
+
