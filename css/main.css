@@ -120,4 +120,7 @@ h1 a {
 
 
 }
+.image-row {
+  display: flow-root;
+}
 
